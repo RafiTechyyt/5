@@ -1,0 +1,33 @@
+Algorithm: Binary Tree Creation and Traversal
+Start.
+Define a node containing data and pointers to the left and right children.
+Read the root node's data using the create() function.
+If the data is -1, return NULL.
+Otherwise, allocate memory for a new node.
+Recursively create its left and right subtrees.
+Perform inorder traversal: Left, Root, Right.
+Perform preorder traversal: Root, Left, Right.
+Perform postorder traversal: Left, Right, Root.
+Display all traversal results.
+Stop.
+
+
+
+
+
+Insert the node at the appropriate NULL position. Reject duplicates.
+If Delete is selected:
+Read the value and search for the node.
+If the node is absent, display “Node not found”.
+If it has no children, delete it directly.
+If it has one child, replace it with that child.
+If it has two children, replace its value with the minimum value in its right subtree and delete that successor node.
+If Count Leaf Nodes is selected:
+Return 0 if the node is NULL.
+Return 1 if both children are NULL.
+Otherwise, add the leaf counts of the left and right subtrees.
+If Display is selected, perform inorder traversal.
+If Exit is selected, terminate the program.
+Otherwise, display “Invalid choice”.
+Repeat from Step 2 until Exit is selected.
+Stop.
